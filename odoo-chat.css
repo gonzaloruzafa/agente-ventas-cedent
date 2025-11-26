@@ -1,0 +1,39 @@
+/* ========================================
+   CSS PARA CHAT ODOO - CEDENT VENTAS
+   ======================================== */
+
+/* FORZAR SALTOS DE LÍNEA - OPCIÓN NUCLEAR */
+.o_thread_message_content,
+.o_livechat_message_content,
+.o_mail_message_content,
+.o-mail-Message-content, /* Versiones nuevas Odoo 16/17 */
+.o_Message_content,
+div[class*="o_livechat_message"],
+div[class*="message_content"] {
+    white-space: pre-wrap !important;
+    word-wrap: break-word !important;
+    display: block !important;
+}
+
+/* Arreglar el color de los links */
+a {
+    word-break: break-all !important;
+}
+
+/* ========================================
+   ESTILOS ADICIONALES (OPCIONAL)
+   ======================================== */
+
+/* Asegurar que los enlaces sean visibles */
+.o_thread_message_content a,
+.o_livechat_message_content a,
+.o_mail_message_content a {
+    color: #0066cc !important;
+    text-decoration: underline !important;
+}
+
+/* Asegurar espaciado entre mensajes */
+.o_thread_message_content p,
+.o_livechat_message_content p {
+    margin-bottom: 0.5em !important;
+}
